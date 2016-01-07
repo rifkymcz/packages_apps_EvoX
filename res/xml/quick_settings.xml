@@ -24,6 +24,13 @@
         android:summary="@string/qs_brightness_slider_summary"
         android:defaultValue="true"/>
 
+    <com.extra.settings.preferences.SystemSettingSwitchPreference
+        android:key="qs_show_brightness_icon"
+        android:title="@string/brightness_icon_title"
+        android:summary="@string/brightness_icon_summary"
+        android:dependency="qs_show_brightness_slider"
+        android:defaultValue="false"/>
+
     <com.extra.settings.preferences.SecureSettingSwitchPreference
         android:key="qs_brightness_position_bottom"
         android:title="@string/qs_brightness_position_bottom_title"
@@ -44,7 +51,7 @@
         android:entries="@array/quick_pulldown_entries"
         android:entryValues="@array/quick_pulldown_values" />
 
-     <PreferenceCategory
+    <PreferenceCategory
         android:key="qs_opacity_category"
         android:title="@string/qs_opacity_category">
 
@@ -56,6 +63,6 @@
         settings:units=""
         android:persistent="false" />
 
-     </PreferenceCategory>
+    </PreferenceCategory>
 
 </PreferenceScreen>
