@@ -231,4 +231,8 @@
     <string name="qs_panel_alpha_title">Opacity</string>
     <string name="qs_opacity_category">QS panel opacity</string>
 
+    <!-- Lockscreen visualizer -->
+    <string name="lockscreen_visualizer_title">Lockscreen visualizer</string>
+    <string name="lockscreen_visualizer_summary">Displays a live design on lockscreen while music is playing</string>
+
 </resources>
