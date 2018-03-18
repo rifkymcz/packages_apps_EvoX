@@ -22,4 +22,18 @@
         android:entries="@array/quick_pulldown_entries"
         android:entryValues="@array/quick_pulldown_values" />
 
+     <PreferenceCategory
+        android:key="qs_opacity_category"
+        android:title="@string/qs_opacity_category">
+
+    <com.extra.settings.preferences.CustomSeekBarPreference
+        android:key="qs_panel_bg_alpha"
+        android:title="@string/qs_panel_alpha_title"
+        android:max="255"
+        settings:min="0"
+        settings:units=""
+        android:persistent="false" />
+
+     </PreferenceCategory>
+
 </PreferenceScreen>

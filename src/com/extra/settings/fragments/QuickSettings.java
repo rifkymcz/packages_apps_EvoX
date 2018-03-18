@@ -28,6 +28,7 @@ import android.content.ContentResolver;
 import android.provider.Settings;
 import android.os.UserHandle;
 
+import com.extra.settings.preferences.CustomSeekBarPreference;
 import com.android.internal.logging.nano.MetricsProto;
 import com.android.settings.SettingsPreferenceFragment;
 
@@ -35,7 +36,10 @@ import com.android.settings.R;
 
 public class QuickSettings extends SettingsPreferenceFragment implements Preference.OnPreferenceChangeListener {
 
+	private static final String OMNI_QS_PANEL_BG_ALPHA = "qs_panel_bg_alpha";
+
     ListPreference mQuickPulldown;
+	private CustomSeekBarPreference mQsPanelAlpha;
 
     @Override
     public void onCreate(Bundle savedInstanceState) {
@@ -43,12 +47,20 @@ public class QuickSettings extends SettingsPreferenceFragment implements Prefere
 
         addPreferencesFromResource(R.xml.quick_settings);
 
+		ContentResolver resolver = getActivity().getContentResolver();
+
         //qs_panel quick pulldown
         int qpmode = Settings.System.getIntForUser(getContentResolver(),
         Settings.System.STATUS_BAR_QUICK_QS_PULLDOWN, 1, UserHandle.USER_CURRENT);
         mQuickPulldown = (ListPreference) findPreference("status_bar_quick_qs_pulldown");
         mQuickPulldown.setValue(String.valueOf(qpmode));
         mQuickPulldown.setOnPreferenceChangeListener(this);
+
+	mQsPanelAlpha = (CustomSeekBarPreference) findPreference(OMNI_QS_PANEL_BG_ALPHA);
+        int qsPanelAlpha = Settings.System.getIntForUser(resolver,
+                Settings.System.OMNI_QS_PANEL_BG_ALPHA, 255, UserHandle.USER_CURRENT);
+        mQsPanelAlpha.setValue(qsPanelAlpha);
+        mQsPanelAlpha.setOnPreferenceChangeListener(this);
     }
 
     public boolean onPreferenceChange(Preference preference, Object newValue) {
@@ -61,6 +73,12 @@ public class QuickSettings extends SettingsPreferenceFragment implements Prefere
             int index = mQuickPulldown.findIndexOfValue((String) newValue);
             mQuickPulldown.setSummary(
                     mQuickPulldown.getEntries()[index]);
+            return true;
+        } else if (preference == mQsPanelAlpha) {
+            int bgAlpha = (Integer) newValue;
+            Settings.System.putIntForUser(getContentResolver(),
+                    Settings.System.OMNI_QS_PANEL_BG_ALPHA, bgAlpha,
+                    UserHandle.USER_CURRENT);
             return true;
         }
         return false;
