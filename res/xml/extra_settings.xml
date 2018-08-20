@@ -38,6 +38,13 @@
             android:fragment="com.extra.settings.fragments.QuickSettings"
             android:icon="@drawable/ic_settings_quicksettings"/>
 
+        <!-- Buttons -->
+        <Preference
+            android:key="buttons_category"
+            android:title="@string/buttons_title"
+            android:fragment="com.extra.settings.fragments.ButtonSettings"
+            android:icon="@drawable/ic_settings_buttons"/>
+
         <!-- Gestures -->
         <Preference
             android:key="gesture_settings"
