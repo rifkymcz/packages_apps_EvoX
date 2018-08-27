@@ -26,6 +26,8 @@
     <string name="general_tweaks_title">General tweaks</string>
     <string name="theme_main">Themes</string>
     <string name="theme_main_summary">Color it up!</string>
+    <string name="navigation_category">Navigation</string>
+    <string name="navigation_category_summary">Customize your navigation bar</string>
 
     <!-- General app strings -->
     <string name="general_category">General</string>
@@ -452,5 +454,11 @@
     <string name="less_notification_sounds_30s">Every 30 seconds</string>
     <string name="less_notification_sounds_1m">Every minute</string>
     <string name="less_notification_sounds_2m">Every 2 minutes</string>
+
+    <!-- Navigation -->
+    <string name="navigationbar_settings_title">Navigation bar</string>
+
+    <!-- Navbar tuner -->
+    <string name="navbar_tuner_title">Navbar tuner</string>
 
 </resources>

@@ -25,8 +25,10 @@
     <string name="notification_settings_title">Notificaciones</string>
     <string name="general_tweaks_title">Ajustes generales</string>
     <string name="theme_main">Temas</string>
-	<string name="theme_main_summary">Colorealo!</string>
-
+    <string name="theme_main_summary">Colorealo!</string>
+    <string name="navigation_category">Navegacion</string>
+    <string name="navigation_category_summary">Personaliza tu barra de navegacion</string>
+	
     <!-- General app strings -->
     <string name="general_category">General</string>
     <string name="gestures_category">Gestos</string>
@@ -327,7 +329,7 @@
     <string name="allow_signature_fake_summary">Permitir a las aplicaciones traspasar el sistema de seguridad pretendiendo ser otra aplicacion</string>
 
     <!-- QS tile styles -->
-    <string name="qs_tile_style_title">Estilo de icono de configuracones rapidas</string>
+    <string name="qs_tile_style_title">Estilo de icono de configuraciones rapidas</string>
     <string name="qstile_default">Por defecto</string>
     <string name="qstile_circle_trim">Circulo con recorte</string>
     <string name="qstile_dual_tone_circle">Circulo doble tono</string>
@@ -452,5 +454,11 @@
     <string name="less_notification_sounds_30s">Cada 30 segundos</string>
     <string name="less_notification_sounds_1m">Cada minuto</string>
     <string name="less_notification_sounds_2m">Cada 2 minutos</string>
+
+    <!-- Navigation -->
+    <string name="navigationbar_settings_title">Barra de navegacion</string>
+
+    <!-- Navbar tuner -->
+    <string name="navbar_tuner_title">Modificador de barra de navegacion</string>
 
 </resources>

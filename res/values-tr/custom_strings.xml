@@ -26,6 +26,8 @@
     <string name="general_tweaks_title">Genel ince ayarlar</string>
     <string name="theme_main">Tema</string>
     <string name="theme_main_summary">Renklendir!</string>
+    <string name="navigation_category">Gezinti çubuğu</string>
+    <string name="navigation_category_summary">Gezinme çubuğunu özelleştir</string>
 
     <!-- General app strings -->
     <string name="general_category">Genel</string>
@@ -452,5 +454,11 @@
     <string name="less_notification_sounds_30s">30 saniyede bir</string>
     <string name="less_notification_sounds_1m">Her dakika</string>
     <string name="less_notification_sounds_2m">2 dakikada bir</string>
+     
+    <!-- Navigation -->
+    <string name="navigationbar_settings_title">Gezinti çubuğu</string>
+
+    <!-- Navbar tuner -->
+    <string name="navbar_tuner_title">Navbar tuner</string>
 
 </resources>
