@@ -190,10 +190,6 @@
     <!-- Lockscreen icons -->
     <string name="hide_lockscreen_items_title">Item layar kunci</string>
 
-    <!-- Lockscreen battery info indicator  -->
-    <string name="lockscreen_battery_info_title">Info pengisian daya layar kunci</string>
-    <string name="lockscreen_battery_info_summary">Menampilkan arus maksimal, tegangan dan suhu baterai pada layar kunci ketika sedang mengisi daya</string>
-
     <!-- Lockscreen items -->
     <string name="lockscreen_clock_title">Widget jam</string>
     <string name="lockscreen_clock_summary">Tampilkan widget jam di layar kunci</string>
