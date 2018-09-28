@@ -36,16 +36,31 @@
         android:key="misc_extensions_icons_category"
         android:title="@string/icons_category">
 
+        <Preference
+            android:title="@string/traffic_title"
+            android:key="traffic"
+            android:fragment="com.extra.settings.fragments.Traffic"/>
+
+        <Preference
+            android:key="stock_tuner"
+            android:title="@string/systemui_tuner_title"
+            android:summary="@string/systemui_tuner_summary">
+            <intent android:action="android.intent.action.MAIN"
+                android:targetPackage="com.android.systemui"
+                android:targetClass="com.android.systemui.DemoMode" />
+        </Preference>
+
         <!-- status bar battery -->
         <Preference
             android:key="status_bar_battery_category"
             android:title="@string/status_bar_battery_title" 
             android:fragment="com.extra.settings.fragments.StatusBarBattery"/>
 
-        <Preference
-            android:title="@string/traffic_title"
-            android:key="traffic"
-            android:fragment="com.extra.settings.fragments.Traffic"/>
+        <com.extra.settings.preferences.SystemSettingSwitchPreference
+            android:key="use_old_mobiletype"
+            android:title="@string/use_old_mobiletype_title"
+            android:summary="@string/use_old_mobiletype_summary"
+            android:defaultValue="false" />
 
         <com.extra.settings.preferences.SystemSettingSwitchPreference
             android:key="roaming_indicator_icon"
