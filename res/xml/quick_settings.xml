@@ -45,6 +45,12 @@
         android:defaultValue="false"
         android:dependency="qs_show_brightness"/>
 
+    <com.extra.settings.preferences.SystemSettingSwitchPreference
+        android:key="bluetooth_qs_show_battery"
+        android:title="@string/bluetooth_battery_title"
+        android:summary="@string/bluetooth_battery_summary"
+        android:defaultValue="true" />
+
     <com.extra.settings.preferences.SecureSettingSwitchPreference
         android:key="quick_settings_vibrate"
         android:title="@string/quick_settings_vibrate_title"
