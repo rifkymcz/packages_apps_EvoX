@@ -22,6 +22,18 @@
         android:summary="@string/three_finger_gesture_summary"
         android:defaultValue="false" />
 
+    <com.extra.settings.preferences.SystemSettingSwitchPreference
+        android:key="screen_record_shortcut"
+        android:title="@string/screen_record_shortcut"
+        android:summary="@string/screen_record_shortcut_summary"
+        android:defaultValue="false" />
+
+    <com.extra.settings.preferences.SystemSettingSwitchPreference
+        android:key="screen_shot_shortcut"
+        android:title="@string/screen_shot_shortcut"
+        android:summary="@string/screen_shot_shortcut_summary"
+        android:defaultValue="false" />
+
     <PreferenceCategory
         android:key="corners_category"
         android:title="@string/corners_category" >

@@ -349,4 +349,12 @@
     <string name="hardware_keys_double_tap_title">Double tap action</string>
     <string name="hardware_keys_disable_title">Disable keys</string>
 
+    <!-- ScreenRecord Shortcut -->
+    <string name="screen_record_shortcut">Screenrecord Shortcut</string>
+    <string name="screen_record_shortcut_summary">Power + Volume Up triggers Screenrecord when enabled</string>
+
+    <!-- ScreenShot Shortcut -->
+    <string name="screen_shot_shortcut">Screenshot Shortcut</string>
+    <string name="screen_shot_shortcut_summary">Power + Volume Down triggers screenshot when enabled</string>
+
 </resources>
