@@ -21,6 +21,12 @@
         android:summary="@string/powermenu_lockscreen_summary"
         android:defaultValue="true" />
 
+    <com.extra.settings.preferences.SystemSettingSwitchPreference
+        android:key="advanced_reboot"
+        android:title="@string/advanced_reboot_title"
+        android:summary="@string/advanced_reboot_summary"
+        android:defaultValue="false" />
+
     <!-- power menu lockdown -->
     <com.extra.settings.preferences.SecureSettingSwitchPreference
         android:key="lockdown_in_power_menu"
