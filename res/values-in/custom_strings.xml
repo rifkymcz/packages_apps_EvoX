@@ -255,7 +255,7 @@
     <string name="systemui_tuner_title">Penyetel Antarmuka Pengguna Sistem</string>
     <string name="systemui_tuner_summary">Fitur Eksperimental Sistem UI</string>
      
-          <!-- Statusbar Clock -->
+    <!-- Statusbar Clock -->
     <string name="status_bar_clock">Tanggal dan waktu</string>
     <string name="status_bar_clock_summary">Konfigurasi tampilan status bar jam dan waktu</string>
     <string name="status_bar_clock_title">Pengaturam jam</string>
