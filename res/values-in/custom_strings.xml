@@ -321,5 +321,11 @@
     <!-- ScreenShot Shortcut -->
     <string name="screen_shot_shortcut">Pintasan screenshot</string>
     <string name="screen_shot_shortcut_summary">Tombol power + volume bawah memicu screenshot saat diaktifkan</string>
-     
+
+    <!-- Text shown for the title of the lockdown option -->
+    <string name="lockdown_settings_title">Tampilkan opsi kuncian</string>
+    <!-- Text shown for the description of the lockdown option -->
+    <string name="lockdown_settings_summary">Opsi tampilan tombol daya yang mematikan Smart Lock, membuka kunci sidik jari, dan notifikasi pada layar kunci</string>
+
+
 </resources>
