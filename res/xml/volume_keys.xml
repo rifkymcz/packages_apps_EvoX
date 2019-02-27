@@ -34,4 +34,16 @@
         android:summary="@string/volume_answer_call_summary"
         android:defaultValue="false" />
 
+    <PreferenceCategory
+         android:title="@string/audio_panel_view"
+         android:key="vol_panel_view">
+
+         <com.extra.settings.preferences.SystemSettingSwitchPreference
+             android:key="audio_panel_view_position"
+             android:title="@string/volume_panel_on_left_title"
+             android:summary="@string/volume_panel_on_left_summary"
+             android:defaultValue="false" />
+
+     </PreferenceCategory>
+
 </PreferenceScreen>
