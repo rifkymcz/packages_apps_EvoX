@@ -16,22 +16,28 @@
     xmlns:settings="http://schemas.android.com/apk/res/com.android.settings"
     android:title="@string/notification_settings_title">
 
-    <Preference
-        android:key="vol_steps"
-        android:fragment="com.extra.settings.fragments.VolumeStepsFragment"
-        android:title="@string/volume_steps_fragment_title"
-        android:summary="@string/volume_steps_summary" />
+    <PreferenceCategory
+        android:key="headsup_notifications_category"
+        android:title="@string/headsup_category">
+
+     <Preference
+        android:key="heads_up_notifications"
+        android:title="@string/heads_up_notifications"
+        android:summary="@string/heads_up_notifications_summary"
+        android:fragment="com.extra.settings.fragments.HeadsUpSettings"/>
+
+    <com.extra.settings.preferences.SystemSettingSwitchPreference
+        android:key="less_boring_heads_up"
+        android:title="@string/less_boring_heads_up_title"
+        android:summary="@string/less_boring_heads_up_summary"
+        android:defaultValue="false" />
+
+    </PreferenceCategory>
 
     <PreferenceCategory
            android:key="notifications_general_category"
            android:title="@string/general_category">
 
-        <com.extra.settings.preferences.SystemSettingSwitchPreference
-           android:key="notification_guts_kill_app_button"
-           android:title="@string/notification_guts_kill_app_button_title"
-           android:summary="@string/notification_guts_kill_app_button_summary"
-           android:defaultValue="false" />
- 
         <com.extra.settings.preferences.SystemSettingSwitchPreference
             android:key="notification_sound_vib_screen_on"
             android:title="@string/notification_sound_vib_screen_on_title"
@@ -45,22 +51,11 @@
             android:entries="@array/less_notification_sounds_entries"
             android:entryValues="@array/less_notification_sounds_values" />
 
-    </PreferenceCategory>
-
-    <PreferenceCategory
-        android:key="headsup_notifications_category"
-        android:title="@string/headsup_category">
-
-     <Preference
-        android:key="heads_up_notifications"
-        android:title="@string/heads_up_notifications"
-        android:fragment="com.extra.settings.fragments.HeadsUpSettings"/>
-
-    <com.extra.settings.preferences.SystemSettingSwitchPreference
-        android:key="less_boring_heads_up"
-        android:title="@string/less_boring_heads_up_title"
-        android:summary="@string/less_boring_heads_up_summary"
-        android:defaultValue="false" />
+        <com.extra.settings.preferences.SystemSettingSwitchPreference
+           android:key="notification_guts_kill_app_button"
+           android:title="@string/notification_guts_kill_app_button_title"
+           android:summary="@string/notification_guts_kill_app_button_summary"
+           android:defaultValue="false" />
 
     </PreferenceCategory>
 
