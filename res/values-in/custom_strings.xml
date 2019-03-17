@@ -5,6 +5,7 @@
      You may obtain a copy of the License at
           http://www.apache.org/licenses/LICENSE-2.0
      Unless required by applicable law or agreed to in writing, software
+
      distributed under the License is distributed on an "AS IS" BASIS,
      WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
      See the License for the specific language governing permissions and
@@ -96,7 +97,7 @@
 
     <!-- less boring heads up -->
     <string name="less_boring_heads_up_title">Kurangi pemunculan notifikasi</string>
-    <string name="less_boring_heads_up_summary">Munculkan notifikasi di layar hanya untuk telepon atau pesan</string>	
+    <string name="less_boring_heads_up_summary">Munculkan notifikasi di layar hanya untuk telepon atau pesan</string>   
 
     <!-- Battery Styles -->
     <string name="battery_style_title">Gaya ikon baterai</string>
@@ -337,13 +338,13 @@
 
     <!-- Lock Clock Fonts -->
     <string name="lock_clock_font_title">Opsi font jam</string>
-    <string name="lock_clock_font_summary">Ubah font bawaan widget jam layar kunci</string>
+    <string name="lock_clock_font_summary">Ubah font default widget jam layar kunci</string>
     <string name="lock_clock_font_dialog_title">Pilih font jam layar kunci</string>
-    <string name="lock_clock_font_stock">Normal (bawaan)</string>
+    <string name="lock_clock_font_stock">Normal (default)</string>
 
     <!-- Lock Date Fonts -->
     <string name="lock_date_font_title">Opsi font tanggal</string>
-    <string name="lock_date_font_summary">Ubah font bawaan widget tanggal layar kunci</string>
+    <string name="lock_date_font_summary">Ubah font default widget tanggal layar kunci</string>
     <string name="lock_date_font_dialog_title">Pilih font tanggal layar kunci</string>
 
     <!-- Themes -->
@@ -355,7 +356,7 @@
     <string name="qs_panel_color_title">Warna</string>
     <string name="qs_bg_wall_title">Gunakan warna walpaper</string>
     <string name="qs_bg_wall_summary">Atur warna latar belakang QS dari wallpaper</string>
-    <string name="qs_bg_use_fw">Gunakan warna bawaan</string>
+    <string name="qs_bg_use_fw">Gunakan warna default</string>
     <string name="qs_bg_use_fw_summary">Nonaktifkan gaya setelan cepat khusus untuk mesin tema eksternal</string>
     <string name="qs_bg_accent_title">Gunakan warna aksen</string>
     <string name="qs_bg_accent_summary">Atur warna latar belakang QS dari aksen sistem</string>
@@ -378,9 +379,9 @@
     <string name="volume_steps_dtmf_title">Langkah volume: DTMF</string>
     <string name="volume_steps_music_title">Langkah volume: Media</string>
     <string name="volume_steps_notification_title">Langkah volume: Notifikasi</string>
-    <string name="volume_steps_ring_title">Volume steps: Dering</string>
-    <string name="volume_steps_system_title">Volume steps: Sistem</string>
-    <string name="volume_steps_voice_call_title">Volume steps: Panggilan Suara</string>
+    <string name="volume_steps_ring_title">Langkah volume: Dering</string>
+    <string name="volume_steps_system_title">Langkah volume: Sistem</string>
+    <string name="volume_steps_voice_call_title">Langkah volume: Panggilan Suara</string>
     <string name="volume_steps_reset">Setel ulang</string>
 
     <!-- Notification guts kill app button -->
@@ -394,7 +395,7 @@
     <!-- Less Notification sounds -->
     <string name="less_notification_sounds_title">Suara notifkasi pintar</string>
     <string name="less_notification_sounds_summary">Putar suara notifikasi dari setiap aplikasi hanya sekali per periode waktu yang ditetapkan</string>
-    <string name="less_notification_sounds_default">Aplikasi bawaan</string>
+    <string name="less_notification_sounds_default">Aplikasi default</string>
     <string name="less_notification_sounds_10s">Setiap 10 detik</string>
     <string name="less_notification_sounds_30s">Setiap 30 detik</string>
     <string name="less_notification_sounds_1m">Setiap menit</string>
